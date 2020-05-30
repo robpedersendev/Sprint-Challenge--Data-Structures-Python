@@ -63,7 +63,13 @@ class BSTNode:
 # Instantiate the BST class
 BST = BSTNode()
 
+# Create a list of all name_1 names' and place them in the BST object
+for name in names_1:
+    BST.insert(name)
 
+# Compare the names_2 list of names to the BST tree of the names_1 names.
+# If present, append them to the duplicates object
+[duplicates.append(name2) for name2 in names_2 if BST.contains(name2)]
 
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
