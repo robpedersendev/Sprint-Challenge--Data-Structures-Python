@@ -1,5 +1,5 @@
 class RingBuffer:
-    def __init__(self, capacity=3):
+    def __init__(self, capacity):
         # Set up the values for the class
         self.capacity = capacity
         # how values will be appended
@@ -22,6 +22,6 @@ class RingBuffer:
         if self.x == self.capacity:
             self.x = 0
 
-
     def get(self):
-        pass
+        # Return all elements in the right order
+        return self.data
