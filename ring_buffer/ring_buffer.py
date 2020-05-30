@@ -4,6 +4,8 @@ class RingBuffer:
         self.capacity = capacity
         # how values will be appended
         self.list = []
+        # Set the current index
+        self.x = 0
 
     def append(self, item):
         pass
