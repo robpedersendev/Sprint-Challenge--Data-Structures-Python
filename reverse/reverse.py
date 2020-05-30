@@ -46,4 +46,6 @@ class LinkedList:
 
         # Point the node's next to a new variable
         next = node.get_next()
+        # Reverse the direction of the node's next
+        node.set_next(prev)
 
