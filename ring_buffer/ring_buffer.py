@@ -3,7 +3,7 @@ class RingBuffer:
         # Set up the values for the class
         self.capacity = capacity
         # how values will be appended
-        self.list = []
+        self.data = []
         # Set the current index
         self.x = 0
 
