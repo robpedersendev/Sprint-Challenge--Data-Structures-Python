@@ -9,7 +9,8 @@ class RingBuffer:
 
     def append(self, item):
         # If it is not full, add the item to the current index
-
+        if len(self.list) < self.capacity:
+            self.data.append(item)
         # If it is full, set the current index
 
 
