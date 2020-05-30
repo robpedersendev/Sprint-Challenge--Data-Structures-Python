@@ -17,10 +17,10 @@ class RingBuffer:
         else:
             # Assign the self.list current index to equal the oldest position starting from 0
             self.list[self.x] = item
-        # To keep code dry, increment the self.x to one index higher.
-        # We do this to 1. Increase the current index to a higher level
-        self.x += 1
-
+        # Check if the index is the same as the capacity of the list
+        # If it is, then reassign the current index to 0
+        if self.x == self.capacity:
+            self.x = 0
 
 
     def get(self):
