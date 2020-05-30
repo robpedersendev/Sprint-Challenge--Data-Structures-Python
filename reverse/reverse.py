@@ -42,11 +42,8 @@ class LinkedList:
         # Use recursion to solve this problem
         # Check if list is empty
         if node is None:
-            return "This is empty"
+            return "This is an empty Data Structure."
 
         # Point the node's next to a new variable
-        # Reverse the direction of the node's next
+        next = node.get_next()
 
-        # If we are not at the tail, continue on, and reverse the LL
-
-        # If the current node is the tail, make it the head
