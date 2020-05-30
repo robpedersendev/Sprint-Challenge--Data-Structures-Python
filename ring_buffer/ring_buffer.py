@@ -8,7 +8,10 @@ class RingBuffer:
         self.x = 0
 
     def append(self, item):
-        pass
+        # If it is not full, add the item to the current index
+
+        # If it is full, set the current index
+
 
     def get(self):
         pass
