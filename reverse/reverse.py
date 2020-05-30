@@ -48,4 +48,6 @@ class LinkedList:
         next = node.get_next()
         # Reverse the direction of the node's next
         node.set_next(prev)
-
+        # If we are not at the tail, continue on, and reverse the LL
+        if next is not None:
+            self.reverse_list(next, node)
