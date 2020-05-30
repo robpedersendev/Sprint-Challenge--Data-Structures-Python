@@ -51,3 +51,6 @@ class LinkedList:
         # If we are not at the tail, continue on, and reverse the LL
         if next is not None:
             self.reverse_list(next, node)
+        # If the current node is the tail, make it the head
+        else:
+            self.head = node
