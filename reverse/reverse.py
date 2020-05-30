@@ -41,6 +41,8 @@ class LinkedList:
     def reverse_list(self, node, prev):
         # Use recursion to solve this problem
         # Check if list is empty
+        if node is None:
+            return "This is empty"
 
         # Point the node's next to a new variable
         # Reverse the direction of the node's next

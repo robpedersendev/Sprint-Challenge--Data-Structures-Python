@@ -22,7 +22,7 @@ duplicates = []  # Return the list of duplicates in this data structure
 
 # Pasted the BST code from other project
 class BSTNode:
-    def __init__(self, value="I Own this Bizzotch"):
+    def __init__(self, value="I Own this"):
         self.value = value
         self.left = None
         self.right = None
