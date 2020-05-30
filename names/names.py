@@ -61,7 +61,7 @@ class BSTNode:
 
 
 # Instantiate the BST class
-BST = BSTNode()
+BST = BSTNode("New Node")
 
 # Create a list of all name_1 names' and place them in the BST object
 for name in names_1:
@@ -77,6 +77,7 @@ print(f"runtime: {end_time - start_time} seconds")
 
 """
 Runtime of a nested loop is: 6.731910943984985 seconds. It has a runtime complexity of O(n**2)
+Runtime of a BST is: 0.10809826850891113 seconds. It has a runtime complexity of O(n log n)
 """
 
 # ---------- Stretch Goal -----------
