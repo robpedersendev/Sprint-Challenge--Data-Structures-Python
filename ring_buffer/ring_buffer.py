@@ -17,6 +17,8 @@ class RingBuffer:
         else:
             # Assign the self.list current index to equal the oldest position starting from 0
             self.data[self.x] = item
+        # Increment the current index's value
+        self.x += 1
         # Check if the index is the same as the capacity of the list
         # If it is, then reassign the current index to 0
         if self.x == self.capacity:
